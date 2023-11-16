@@ -33,7 +33,7 @@
 		},
 	};
 </script>
-<title>Portfolio_owner's_name_here</title>
+<title>Lauren Petersen - Home Page</title>
 <!-- tailwind css CDN link -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
