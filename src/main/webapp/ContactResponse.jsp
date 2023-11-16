@@ -41,27 +41,34 @@
 	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 	crossorigin="anonymous" />
 </head>
-<body>
+<body class="flex flex-col bg-slate-50">
 
 	<div
 		class="mt-44 flex w-[173px] max-w-full flex-col items-stretch justify-center self-center max-md:mt-10">
 		<div
-			class="font-playfair -mr-5 whitespace-nowrap text-center text-5xl font-bold leading-[72px] text-zinc-800 max-md:text-4xl max-md:leading-[67px]">
-			Contact message sent!</div>
+			class="font-playfair -mr-5 whitespace-nowrap text-center self-center text-5xl font-bold leading-[72px] text-zinc-800 max-md:text-4xl max-md:leading-[67px]">
+			Message sent!</div>
 		<div
-			class="ml-5 mt-1 flex h-1 w-[100px] shrink-0 flex-col self-center rounded-sm bg-purple-300"></div>
+			class="ml-5 mt-1 flex h-1 w-[400px] shrink-0 flex-col self-center rounded-sm bg-purple-300"></div>
 	</div>
 
+	<div class="justify-center items-center self-center z-[1] flex w-[650px] max-w-full flex-col mt-20 px-5 py-0.5 max-md:mt-10">
+		<div class="items-stretch self-stretch flex flex-col -mr-5">
+			<div class="text-zinc-800 self-center text-2xl font-nunito font-semibold leading-6 whitespace-nowrap">
+				Dear, ${param.name} your message has been sent to Lauren Peterson! Expect a reply to ${param.email} within 3 days!
+			</div>
+		</div>
+		
+		<div class="items-stretch self-stretch flex flex-col -mr-5 mt-7">
+			<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
+				Message: 
+			</div>
+			<div class="border bg-white flex shrink-0 h-40 flex-col mt-3 rounded-lg border-solid border-slate-200">
+				${param.message}
+			</div>
+		</div> 
+	</div>
 
-	<br />
-	<br /> Name: ${param.name}
-
-	<br />
-	<br /> Email: ${param.email}
-
-	<br />
-	<br /> Message: ${param.message}
-
-
+	<jsp:include page="Footer.html" />
 </body>
 </html>
