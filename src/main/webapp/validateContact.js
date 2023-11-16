@@ -7,15 +7,15 @@ form.addEventListener("submit", (e)=>{
 	const errors = [];
 	
 	if(name.value.trim()===""){
-		errors.push("Name required");
+		errors.push("Name required.");
 	}
 	
 	if(email.value.trim()===""){
-		errors.push("Email required");
+		errors.push("Email required.");
 	}
 	
 	if(message.value.trim()===""){
-		errors.push("Please write a message");
+		errors.push("Please write a message.");
 	}
 	
 	if(errors.length > 0){
