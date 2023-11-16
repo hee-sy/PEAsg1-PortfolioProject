@@ -1,4 +1,6 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="ISO-8859-1" />
@@ -450,86 +452,38 @@
         class="ml-5 mt-1 flex h-1 w-[100px] shrink-0 flex-col self-center rounded-sm bg-purple-300"
       ></div>
     </div>
-    <div
-      name="contact form + footer"
-      class="z-[1] mt-20 flex w-[650px] max-w-full flex-col items-center justify-center self-center px-5 py-0.5 max-md:mt-10"
-    >
-      <div class="-mr-5 flex flex-col items-stretch self-stretch">
-        <div
-          class="font-nunito whitespace-nowrap text-base font-semibold leading-6 text-zinc-800"
-        >
-          Name
-        </div>
-        <div
-          class="mt-3.5 flex h-10 shrink-0 flex-col rounded-lg border border-solid border-slate-200 bg-white"
-        ></div>
-      </div>
-      <div class="-mr-5 mt-7 flex flex-col items-stretch self-stretch">
-        <div
-          class="font-nunito whitespace-nowrap text-base font-semibold leading-6 text-zinc-800"
-        >
-          Email
-        </div>
-        <div
-          class="mt-3.5 flex h-10 shrink-0 flex-col rounded-lg border border-solid border-slate-200 bg-white"
-        ></div>
-      </div>
-      <div class="-mr-5 mt-7 flex flex-col items-stretch self-stretch">
-        <div
-          class="font-nunito whitespace-nowrap text-base font-semibold leading-6 text-zinc-800"
-        >
-          Message
-        </div>
-        <div
-          class="mt-3 flex h-40 shrink-0 flex-col rounded-lg border border-solid border-slate-200 bg-white"
-        ></div>
-      </div>
-      <!-- working send button CSS interaction, can reuse this -->
-      <div
-        class="font-roboto -mr-5 mt-4 w-[89px] max-w-full items-center self-end whitespace-nowrap rounded-lg bg-purple-300 px-4 py-2 text-lg font-medium leading-7 text-zinc-800 hover:cursor-pointer hover:bg-purple-400 hover:text-zinc-50 active:bg-purple-500"
-      >
-        Send
-      </div>
+    <div class="justify-center items-center self-center z-[1] flex w-[650px] max-w-full flex-col mt-20 px-5 py-0.5 max-md:mt-10">
+			<div class="items-stretch self-stretch flex flex-col -mr-5">
+				<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
+					Name
+					</div>
+				<div class="border bg-white flex shrink-0 h-10 flex-col mt-3.5 rounded-lg border-solid border-slate-200">
+					<input class="h-full rounded-lg" id="name" name="name" type="text" placeholder="&nbsp John"></div>
+			</div>
+			<div class="items-stretch self-stretch flex flex-col -mr-5 mt-7">
+				<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
+					Email</div>
+				<div class="border bg-white flex shrink-0 h-10 flex-col mt-3.5 rounded-lg border-solid border-slate-200">
+					<input class="h-full rounded-lg" id="email" name="email" type="email" placeholder="&nbsp abc@example.com" value="  "></div>
+			</div>
+			<div class="items-stretch self-stretch flex flex-col -mr-5 mt-7">
+				<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
+					Message</div>
+				<div class="border bg-white flex shrink-0 h-40 flex-col mt-3 rounded-lg border-solid border-slate-200">
+					<textarea class="h-full rounded-lg align-top resize-none" id="message" name="message" placeholder="&nbsp Message"></textarea>
+					</div>
+			</div>
+			<!-- working send button CSS interaction, can reuse this -->
+			<div class="text-zinc-800 hover:text-zinc-50 text-lg font-roboto font-medium leading-7 whitespace-nowrap items-center bg-purple-300 hover:bg-purple-400 active:bg-purple-500 hover:cursor-pointer w-[89px] max-w-full -mr-5 mt-4 px-4 py-2 rounded-lg self-end">
+				<input type="submit" value="Send"></div>
+			<jsp:include page="Footer.html" />
+		</div>
+		<img loading="lazy"
+			src="https://cdn.builder.io/api/v1/image/assets/TEMP/deac631f-7eaf-4e07-aabd-b29ae0c1ec8b?"
+			class="aspect-[4.19] object-contain object-center w-full fill-purple-300 overflow-hidden self-stretch max-md:max-w-full" />
 
-      <footer class="flex flex-col items-center justify-center">
-        <div
-          name="footer_contact_icon_links"
-          class="mt-14 flex w-[258px] max-w-full items-start justify-center gap-4 self-center max-md:mt-10 max-md:justify-center"
-        >
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/178ec17d-661f-4009-a352-b63ec271b3b2?"
-            class="my-auto aspect-square w-full flex-1 shrink-0 overflow-hidden fill-black object-scale-down object-center"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/44659ccd-4aa1-4deb-b11f-bfa675417260?"
-            class="aspect-square w-full flex-1 shrink-0 overflow-hidden object-contain object-center"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4929720a-e8e4-4489-b54e-993a81214dd2?"
-            class="aspect-square w-full flex-1 shrink-0 items-center justify-center overflow-hidden object-contain object-center"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f174ba72-9bf3-43ee-88c7-2d41e8caa2f3?"
-            class="aspect-square w-full flex-1 shrink-0 items-center justify-center overflow-hidden object-contain object-center"
-          />
-        </div>
-        <pre class="font-poppins mt-5 text-base text-zinc-500">
-Copyright @ ELEGIXTECH   2023   All Rights Reserved</pre
-        >
-      </footer>
-    </div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/deac631f-7eaf-4e07-aabd-b29ae0c1ec8b?"
-      class="aspect-[4.19] w-full self-stretch overflow-hidden fill-purple-300 object-contain object-center max-md:max-w-full"
-    />
-  </body>
+</body>
 </html>
-
 <!-- link to run: 
 http://localhost:8080/PEAsg1-PortfolioProject/HomePage.html
 -->
