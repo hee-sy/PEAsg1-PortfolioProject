@@ -4,6 +4,8 @@ tailwind.config = {
 			extend : {
 				colors : {
 					clifford : "#da373d",
+					buttonLeft : "#e1c2f0",
+					buttonRight : "#6897fa",
 				// background white color: bg-slate-50
 				},
 			},
