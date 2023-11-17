@@ -1,54 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head> </head>
 
-<head>
-	<meta charset="ISO-8859-1">
-	<title>Insert title here</title>
-</head>
+    <body>
+        <div
+            name="contact heading"
+            class="mt-44 flex w-[173px] max-w-full flex-col items-stretch justify-center self-center max-md:mt-10"
+        >
+            <div
+                class="font-playfair -mr-5 whitespace-nowrap text-center text-5xl font-bold leading-[72px] text-zinc-800 max-md:text-4xl max-md:leading-[67px]"
+            >
+                Contact
+            </div>
+            <div
+                class="ml-5 mt-1 flex h-1 w-[100px] shrink-0 flex-col self-center rounded-sm bg-purple-300"
+            ></div>
+        </div>
 
-<body>
-
-	<div name="contact heading"
-		class="mt-44 flex w-[173px] max-w-full flex-col items-stretch justify-center self-center max-md:mt-10">
-		<div
-			class="font-playfair -mr-5 whitespace-nowrap text-center text-5xl font-bold leading-[72px] text-zinc-800 max-md:text-4xl max-md:leading-[67px]">
-			Contact
-		</div>
-		<div class="ml-5 mt-1 flex h-1 w-[100px] shrink-0 flex-col self-center rounded-sm bg-purple-300"></div>
-	</div>
-
-	<form action="ContactResponse.jsp"
-		class="justify-center items-center self-center flex w-[650px] max-w-full flex-col mt-20 px-5 py-0.5 max-md:mt-10">
-		<div class="items-stretch self-stretch flex flex-col -mr-5">
-			<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
-				Name
-			</div>
-			<div class="border bg-white flex shrink-0 h-10 flex-col mt-3.5 rounded-lg border-solid border-slate-200">
-				<input class="px-2 h-full rounded-lg" id="name" name="name" type="text" placeholder="John">
-			</div>
-		</div>
-		<div class="items-stretch self-stretch flex flex-col -mr-5 mt-7">
-			<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
-				Email</div>
-			<div class="border bg-white flex shrink-0 h-10 flex-col mt-3.5 rounded-lg border-solid border-slate-200">
-				<input class="px-2 h-full rounded-lg" id="email" name="email" type="email"
-					placeholder="abc@example.com">
-			</div>
-		</div>
-		<div class="items-stretch self-stretch flex flex-col -mr-5 mt-7">
-			<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
-				Message</div>
-			<div class="border bg-white flex shrink-0 h-40 flex-col mt-3 rounded-lg border-solid border-slate-200">
-				<textarea class="p-2 h-full rounded-lg align-top resize-none" id="message" name="message"
-					placeholder="Message"></textarea>
-			</div>
-		</div>
-		<div
-			class="text-zinc-800 hover:text-zinc-50 text-lg font-roboto font-medium leading-7 whitespace-nowrap items-center bg-purple-300 hover:bg-purple-400 active:bg-purple-500 hover:cursor-pointer w-[89px] max-w-full -mr-5 mt-4 px-4 py-2 rounded-lg self-end">
-			<input type="submit" value="Send">
-		</div>
-	</form>
-	<script src="validateContact.js"></script>
-</body>
-
+        <form
+            action="ContactResponse.jsp"
+            class="mt-20 flex w-[650px] max-w-full flex-col items-center justify-center self-center px-5 py-0.5 max-md:mt-10"
+        >
+            <div class="-mr-5 flex flex-col items-stretch self-stretch">
+                <div
+                    class="font-nunito whitespace-nowrap text-base font-semibold leading-6 text-zinc-800"
+                >
+                    Name
+                </div>
+                <div
+                    class="mt-3.5 flex h-10 shrink-0 flex-col rounded-lg border border-solid border-slate-200 bg-white"
+                >
+                    <input
+                        class="h-full rounded-lg px-2"
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="John"
+                    />
+                </div>
+            </div>
+            <div class="-mr-5 mt-7 flex flex-col items-stretch self-stretch">
+                <div
+                    class="font-nunito whitespace-nowrap text-base font-semibold leading-6 text-zinc-800"
+                >
+                    Email
+                </div>
+                <div
+                    class="mt-3.5 flex h-10 shrink-0 flex-col rounded-lg border border-solid border-slate-200 bg-white"
+                >
+                    <input
+                        class="h-full rounded-lg px-2"
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="abc@example.com"
+                    />
+                </div>
+            </div>
+            <div class="-mr-5 mt-7 flex flex-col items-stretch self-stretch">
+                <div
+                    class="font-nunito whitespace-nowrap text-base font-semibold leading-6 text-zinc-800"
+                >
+                    Message
+                </div>
+                <div
+                    class="mt-3 flex h-40 shrink-0 flex-col rounded-lg border border-solid border-slate-200 bg-white"
+                >
+                    <textarea
+                        class="h-full resize-none rounded-lg p-2 align-top"
+                        id="message"
+                        name="message"
+                        placeholder="Message"
+                    ></textarea>
+                </div>
+            </div>
+            <div
+                class="font-roboto -mr-5 mt-4 w-[89px] max-w-full items-center self-end whitespace-nowrap rounded-lg bg-purple-300 px-4 py-2 text-lg font-medium leading-7 text-zinc-800 hover:cursor-pointer hover:bg-purple-400 hover:text-zinc-50 active:bg-purple-500"
+            >
+                <input type="submit" value="Send" />
+            </div>
+        </form>
+        <script src="validateContact.js"></script>
+    </body>
 </html>
