@@ -49,15 +49,15 @@ pageEncoding="ISO-8859-1"%>
         <jsp:include page="MainSection.html" />
 
         <jsp:include page="WorkExperience.html" />
-		
-		<div id="projectSection">
-        <jsp:include page="ProjectPage.html" />
-		</div>
-		
-<!-- 		<div id="contactHomePage"> -->
-<%--         <jsp:include page="Contact.html" /> --%>
-<!-- 		</div> -->
-		
+
+        <div id="projectSection" class="flex flex-col">
+            <jsp:include page="ProjectPage.html" />
+        </div>
+
+        <!-- 		<div id="contactHomePage"> -->
+        <!-- <jsp:include page="Contact.html" /> -->
+        <!-- 		</div> -->
+
         <jsp:include page="Footer.html" />
     </body>
 </html>
