@@ -6,6 +6,7 @@ tailwind.config = {
 					clifford : "#da373d",
 					buttonLeft : "#e1c2f0",
 					buttonRight : "#6897fa",
+                    white : "#ffffff",
 				// background white color: bg-slate-50
 				},
 			},
