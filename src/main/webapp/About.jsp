@@ -18,7 +18,9 @@
 	
 	<jsp:include page="MyServices.html" />
 	
+	<div id="contactAboutPage">
 	<jsp:include page="Contact.html" />
+	</div>
 	
 	<jsp:include page="Footer.html" />
 </body>
