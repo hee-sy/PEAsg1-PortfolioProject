@@ -12,7 +12,7 @@ pageEncoding="ISO-8859-1"%>
     <body class="flex flex-col bg-slate-50">
         <jsp:include page="Header.html" />
 
-        <jsp:include page="AboutMe.html" />
+        <!-- <jsp:include page="AboutMe.html" /> -->
 
         <jsp:include page="Details.html" />
 
