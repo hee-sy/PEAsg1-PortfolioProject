@@ -22,10 +22,11 @@
 			class="ml-5 mt-1 flex h-1 w-[400px] shrink-0 flex-col self-center rounded-sm bg-purple-300"></div>
 	</div>
 
-	<div class="justify-center items-center self-center z-[1] flex w-[650px] max-w-full flex-col mt-20 px-5 py-0.5 max-md:mt-10">
+	<div class="justify-center items-center self-center z-[1] flex w-[400px] max-w-full flex-col mt-20 px-5 py-0.5 max-md:mt-10">
 		<div class="items-stretch self-stretch flex flex-col -mr-5">
 			<div class="text-zinc-800 self-center text-2xl font-nunito font-semibold leading-6 whitespace-nowrap">
-				Dear ${param.name}, your message has been sent to Lauren Peterson! Expect a reply to ${param.email} within 3 days!<br>
+				Dear ${param.name}, your message has been sent to Lauren Peterson! <br>
+				Expect a reply to ${param.email} within 3 days!<br> <br>
 				Thank you.
 			</div>
 		</div>
@@ -34,8 +35,8 @@
 			<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
 				Message: 
 			</div>
-			<div class="border bg-white flex shrink-0 h-40 flex-col mt-3 rounded-lg border-solid border-slate-200">
-				${param.message}
+			<div class="border bg-white shrink-0 flex flex-col mt-3 rounded-lg border-solid border-slate-200">
+				<div class="whitespace-normal p-4">${param.message}</div>
 			</div>
 		</div> 
 	</div>
