@@ -11,7 +11,8 @@
 <!-- tailwind css CDN link -->
 </head>
 <body class="flex flex-col bg-slate-50">
-
+	<jsp:include page="Header.html" />
+	
 	<div
 		class="mt-44 flex w-[173px] max-w-full flex-col items-stretch justify-center self-center max-md:mt-10">
 		<div
@@ -24,7 +25,8 @@
 	<div class="justify-center items-center self-center z-[1] flex w-[650px] max-w-full flex-col mt-20 px-5 py-0.5 max-md:mt-10">
 		<div class="items-stretch self-stretch flex flex-col -mr-5">
 			<div class="text-zinc-800 self-center text-2xl font-nunito font-semibold leading-6 whitespace-nowrap">
-				Dear, ${param.name} your message has been sent to Lauren Peterson! Expect a reply to ${param.email} within 3 days!
+				Dear ${param.name}, your message has been sent to Lauren Peterson! Expect a reply to ${param.email} within 3 days!<br>
+				Thank you.
 			</div>
 		</div>
 		
