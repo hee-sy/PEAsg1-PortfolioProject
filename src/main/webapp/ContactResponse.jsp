@@ -35,8 +35,10 @@
 			<div class="text-zinc-800 text-base font-nunito font-semibold leading-6 whitespace-nowrap">
 				Message: 
 			</div>
-			<div class="border bg-white shrink-0 flex flex-col mt-3 rounded-lg border-solid border-slate-200">
-				<div class="whitespace-normal p-4">${param.message}</div>
+			<div class="border bg-white shrink-0 flex flex-col mt-3 rounded-lg border-solid border-slate-200 max-w-[your-value] overflow-hidden">
+				<div class="whitespace-normal p-4 overflow-hidden overflow-wrap-break-word word-wrap-break-word break-words">
+					${param.message}
+				</div>
 			</div>
 		</div> 
 	</div>
