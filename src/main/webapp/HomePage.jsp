@@ -24,6 +24,3 @@ pageEncoding="ISO-8859-1"%>
         <jsp:include page="Footer.html" />
     </body>
 </html>
-<!-- link to run: 
-http://localhost:8080/PEAsg1-PortfolioProject/HomePage.html
--->

@@ -9,6 +9,7 @@ pageEncoding="ISO-8859-1"%>
         <script src="tailwind-config.js"></script>
         <title>About</title>
     </head>
+    
     <body class="flex flex-col bg-slate-50">
         <jsp:include page="Header.html" />
 
