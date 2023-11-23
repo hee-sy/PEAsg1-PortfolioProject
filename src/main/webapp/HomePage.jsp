@@ -9,6 +9,7 @@ pageEncoding="ISO-8859-1"%>
         <script src="tailwind-config.js"></script>
         <title>Lauren Petersen - Home Page</title>
     </head>
+    
     <body class="flex flex-col bg-slate-50">
 
         <jsp:include page="Header.html" />
@@ -20,7 +21,6 @@ pageEncoding="ISO-8859-1"%>
         <div id="projectSection" class="flex flex-col">
             <jsp:include page="ProjectPage.html" />
         </div>
-
         <jsp:include page="Footer.html" />
     </body>
 </html>
