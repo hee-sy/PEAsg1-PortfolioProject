@@ -15,8 +15,6 @@ pageEncoding="ISO-8859-1"%>
 
         <jsp:include page="AboutMe.html" />
 
-        <jsp:include page="Details.html" />
-
         <jsp:include page="MyServices.html" />
 
         <div id="contactAboutPage" class="flex flex-col">
